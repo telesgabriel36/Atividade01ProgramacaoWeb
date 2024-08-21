@@ -1,0 +1,114 @@
+
+/*Estilo do plano de fundo completo da página*/
+body{
+    background-image:url('img/fundo-principal-pagina.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Título Principal da página*/
+header{
+    display: flex;
+    justify-content:space-between;
+    color: aliceblue;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#tituloPagina{
+    flex: 1;
+    text-align: center;
+    margin-left: 120px;
+}
+
+#iconesRedesSociais{
+    display: flex;
+    gap: 10px;
+}
+
+/* conteiner de apresentação*/
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao img{
+    width: 300px;
+    height: 400px;
+    margin-right: 40px;
+}
+
+#descricao{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#meuNome{
+    color: aliceblue;
+    font-size: 30pt;
+}
+
+.apresentacao p{
+    color: rgb(28, 213, 19);
+    font-size: 20pt;
+}
+
+/*Sobre mim*/
+.sobreMim{
+    text-align: center;
+    margin-top: 220px;
+}
+
+#tituloSobreMim {
+    color:rgb(28, 213, 19) ;
+    font-size: 25pt;
+    text-decoration: underline;
+}
+
+#descricaoSobreMim {
+    color: aliceblue;
+    font-size: 18pt;
+    max-width: 900px;
+    margin: auto;
+}
+
+/*Experiência profissional*/
+#TituloExperienciaProfissional{
+    color:rgb(28, 213, 19) ;
+    font-size: 25pt;
+    text-decoration: underline;
+}
+
+#DescricaoExperienciaProfissional{
+    color: aliceblue;
+    font-size: 18pt;
+    max-width: 900px;
+    margin: auto;
+}
+
+/*Formação acadêmica*/
+#tituloFormacaoAcademica{
+    color:rgb(28, 213, 19) ;
+    font-size: 25pt;
+    text-decoration: underline;
+}
+
+#descricaoFormacaoAcademica{
+    color: aliceblue;
+    font-size: 18pt;
+    max-width: 900px;
+    margin: auto;
+}
+
+footer {
+    margin-top: auto; /* Faz com que o footer vá para o final da página */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
