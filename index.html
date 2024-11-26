@@ -1,90 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-</head>
-<body>
-    
-    <!--título da página-->
-    <header class="titulo">
-        <div id="tituloPagina">
-            <h1>
-                Portifólio
-            </h1>
-        </div>    
-        <div id="iconesRedesSociais">
-            <a href="https://br.linkedin.com/in/gabriel-vieira-teles-01ab1b204" target="_blank">
-                <i class="fa-brands fa-linkedin fa-3x" style="color: rgb(28, 213, 19);"></i>
-            </a> 
-            <a href="https://www.instagram.com/gabriel.teles.64/" target="_blank"> 
-                <i class="fa-brands fa-instagram fa-3x" style="color: rgb(28, 213, 19);"></i>
-            </a>
-            <a href="https://github.com/telesgabriel36" target="_blank">
-                <i class="fa-brands fa-github fa-3x" style="color: rgb(28, 213, 19);"></i>
-            </a>    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="eventos.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header id="headerPaginaPrincipal">
+      <div id="botaoMenu">
+        <button class="botaoMenu">MENU</button>
+      </div>
+
+      <div id="overlayMenu">
+        <div class="conteudoMenu">
+          <a href="#habilidades">Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+          <div>
+            <button id="botaoMenuFechar">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
         </div>
+      </div>
+
+      <div id="tituloPagina">
+        <h1>Portfólio</h1>
+      </div>
+
+      <div id="iconesRedesSociais">
+        <a
+          id="iconeAnimacao"
+          href="https://br.linkedin.com/in/gabriel-vieira-teles-01ab1b204"
+          target="_blank"
+        >
+          <i
+            class="fa-brands fa-linkedin fa-3x"
+            style="color: rgb(28, 213, 19)"
+          ></i>
+        </a>
+        <a href="https://www.instagram.com/gabriel.teles.64/" target="_blank">
+          <i
+            class="fa-brands fa-instagram fa-3x"
+            style="color: rgb(28, 213, 19)"
+          ></i>
+        </a>
+        <a href="https://github.com/telesgabriel36" target="_blank">
+          <i
+            class="fa-brands fa-github fa-3x"
+            style="color: rgb(28, 213, 19)"
+          ></i>
+        </a>
+      </div>
     </header>
 
-    <!--Apresentação: Nome, "Profissão", foto de perfil-->
-    <section class="apresentacao">
-        <div id="descricao">
-            <p id="meuNome">
-                Gabriel Vieira Teles
-            </p>
+    <hr />
 
-            <p>
-                Desenvolvedor Web
-            </p>
-        </div>
-        <img src="img/foto-perfil.png" alt="Foto de perfil Gabriel Teles">
+    <!-- Seção de apresentação -->
+    <section class="apresentacao">
+      <div id="descricao">
+        <p id="meuNome">Gabriel Vieira Teles</p>
+        <p id="subtituloApesentacao"></p>
+      </div>
+      <img src="img/foto-perfil.png" alt="Foto de perfil Gabriel Teles" />
     </section>
 
-    <!--conteiner sobre mim-->
+    <!-- Conteúdo principal -->
     <section class="sobreMim">
-        <!--Secão sobre mim: título e texto descritivo-->
-        <div>
-            <h2 id="tituloSobreMim">
-                Sobre mim
-            </h2>
-            <p id="descricaoSobreMim">
-                Olá, leitor, tudo bem? Me chamo Gabriel Teles, tenho 29 anos e sou estudante do 4º semestre do curso de Análise e Desenvolvimento de Sistemas (ADS). 
-                Estou desenvolvendo habilidades em programação com Java e HTML, e tenho experiência prática em programação orientada a objetos e criação de páginas web responsivas. Além disso, tenho interesse em segurança e auditoria de sistemas, e estou sempre buscando novas oportunidades para aplicar e expandir meu conhecimento. 
-                Sou uma pessoa comprometida e proativa, pronta para enfrentar desafios e contribuir para o desenvolvimento de soluções inovadoras. 
-                Estou aberto a novas oportunidades e projetos que me permitam crescer e fazer a diferença.
-            </p>
-        </div>  
-        <!--Secão Experiência profissional: título e texto descritivo-->
-        <div>
-            <h2 id="TituloExperienciaProfissional">
-                Experiência Profissional
-            </h2>
-            <p id="DescricaoExperienciaProfissional">
-                Durante minha trajetória profissional, adquiri habilidades em atendimento ao cliente e vendas. 
-                Trabalhei na Supritec Informática como balconista de agosto de 2012 a dezembro de 2018, onde fui responsável por atender o público, realizar vendas de artigos eletrônicos, planos de internet, automação comercial, e manutenção de computadores. 
-                Além disso, gerenciei agendamentos, emiti boletos e controlei pagamentos.
-                Posteriormente, atuei como autônomo em uma distribuidora de bebidas de setembro de 2019 a julho de 2024, aprofundando minha experiência em vendas e gestão autônoma de um negócio.
-            </p>
-        </div>
-        <!--Secão formação acadêmica: título e texto descritivo-->
-        <div>
-            <h2 id="tituloFormacaoAcademica">
-                Formação acadêmica
-            </h2>
-            <p id="descricaoFormacaoAcademica">
-                Minha trajetória acadêmica inclui diversas qualificações que complementam minha experiência profissional. 
-                Concluí o curso técnico em Segurança do Trabalho pelo S.E.N.A.C em 2016, onde adquiri conhecimentos fundamentais em saúde e segurança no ambiente de trabalho.
-                Em 2020, obtive meu diploma de Gestão de Recursos Humanos pelo UNIDESC – Centro Universitário de Desenvolvimento do Centro Oeste, o que me proporcionou habilidades em gestão de pessoas e desenvolvimento organizacional.
-                Atualmente, estou cursando Análise e Desenvolvimento de Sistemas (2023 – 2025) também pelo UNIDESC, focando em aprimorar minhas habilidades em programação e desenvolvimento de sistemas, com o objetivo de me especializar na área de tecnologia da informação.
-            </p>
-        </div>
-    </section> 
+      <!-- Sobre mim -->
+      <div>
+        <h2 id="tituloSobreMim">Sobre mim</h2>
+        <p id="descricaoSobreMim">
+          Olá! Sou Gabriel Teles, estudante do 4º semestre de Análise e
+          Desenvolvimento de Sistemas (ADS). Tenho 30 anos e experiência em
+          programação orientada a objetos, Java, HTML e criação de páginas web
+          responsivas. Apaixonado por segurança e auditoria de sistemas, busco
+          constantemente expandir meus conhecimentos. Sou proativo, comprometido
+          e estou pronto para contribuir com soluções inovadoras em novos
+          projetos e oportunidades.
+        </p>
+      </div>
 
+      <!-- Experiência profissional -->
+      <div>
+        <h2 id="TituloExperienciaProfissional">Experiência Profissional</h2>
+        <p id="DescricaoExperienciaProfissional">
+          Adquiri ampla experiência em atendimento ao cliente e vendas durante
+          minha trajetória profissional. Trabalhei como balconista na Supritec
+          Informática (2012-2018), atendendo clientes, vendendo artigos
+          eletrônicos, planos de internet e gerenciando tarefas administrativas.
+          De 2019 a 2024, atuei como autônomo em uma distribuidora de bebidas,
+          fortalecendo minhas habilidades em vendas e gestão de negócios.
+        </p>
+      </div>
+
+      <!-- Formação acadêmica -->
+      <div>
+        <h2 id="tituloFormacaoAcademica">Formação acadêmica</h2>
+        <p id="descricaoFormacaoAcademica">
+          Minha formação inclui um curso técnico em Segurança do Trabalho
+          (SENAC, 2016), graduação em Gestão de Recursos Humanos (UNIDESC, 2020)
+          e atualmente curso Análise e Desenvolvimento de Sistemas (UNIDESC,
+          2023-2025), focando em programação e desenvolvimento de sistemas para
+          me especializar em tecnologia da informação.
+        </p>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <h1>Habilidades</h1>
+      <div class="icones">
+        <div class="icone">
+          <i class="fa-brands fa-js"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="icone">
+          <i class="fa-brands fa-node-js"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="icone">
+          <i class="fa-brands fa-react"></i>
+          <span>React</span>
+        </div>
+        <div class="icone">
+          <i class="fa-brands fa-java"></i>
+          <span>Java</span>
+        </div>
+        <div class="icone">
+          <i class="fa-brands fa-html5"></i>
+          <span>HTML</span>
+        </div>
+        <div class="icone">
+          <i class="fa-brands fa-css3-alt"></i>
+          <span>CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <!--Secção projetos-->
+    <section id="projetos">
+      <h1>Projetos</h1>
+      <div class="projetos-container">
+        <div class="projeto-item">
+          <video src="/videos/projeto hora do dia.mp4" controls></video>
+          <span>Projeto Hora do Dia</span>
+        </div>
+        <div class="projeto-item">
+          <video src="/videos/projeto tela login react.mp4" controls></video>
+          <span>Projeto Tela de Login React</span>
+        </div>
+        <div class="projeto-item">
+          <video
+            src="/videos/projeto Verificador de imagem.mp4"
+            controls
+          ></video>
+          <span>Projeto Verificador de Imagem</span>
+        </div>
+      </div>
+    </section>
+
+    <!--Secção Contatos-->
+    <section id="contato">
+      <h1>Contato</h1>
+
+      <div class="contato-info">
+        <div class="contato-item">
+          <a href="tel:+5561995155189">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <span>(61) 99515-5189</span>
+        </div>
+        <div class="contato-item">
+          <a href="https://www.instagram.com/gabriel.teles.64/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <span>@gabriel.teles.64</span>
+        </div>
+        <div class="contato-item">
+          <a
+            href="https://www.linkedin.com/in/gabriel-vieira-teles-01ab1b204/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <span>linkedin.com/in/gabriel-vieira-teles-01ab1b204</span>
+        </div>
+        <div class="contato-item">
+          <a href="mailto:telesgabriel36@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <span>email@dominio.com</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2024 Gabriel Teles</p>
+      <p>&copy; 2024 Gabriel Teles</p>
     </footer>
-</body>
+  </body>
 </html>
